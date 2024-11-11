@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Art101 - Olivia Joy Cacdac</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT ––––––––––––––––––––––––––––––––––––––––------–––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS & JS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="css/overlaypopup.js"> </script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/icon-joy.png">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION AT the TOP is Here-->
+
+    <nav class="navbar">
+        <div class="container nav_pad">
+            <ul>
+                <li><a class="navbar-link" href="index.html">Home Page</a></li>
+                <li><a class="navbar-link" href="p1.html">Project 1</a></li>
+                <li><a class="navbar-link" href="p2.html">Project 2</a></li>
+                <li><a class="navbar-link" href="p3.html">Project 3</a></li>
+                <li><a class="navbar-link" href="p4.html">Project 4</a></li>
+                <li><a class="navbar-link" href="participation.html">Participation Log</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+
+        <div class="row section">
+            <header id="header" class="twelve columns">
+                <h3>Project 3</h3>
+
+                <div class="statement_text">
+                    <em>
+                        <!-- <marquee behavior="scroll" direction="left"> -->
+                        "Talent is a pursued interest. Anything that you're willing to practice, you can do." - Bob Ross
+                        <!-- </marquee> -->
+                    </em>
+                    <br>
+
+                </div>
+
+            </header>
+        </div>
+
+
+        <!-- NOTE!: For each row section make sure your column divs add up to 12. so 4+8, 6+6, 2+10, etc.-->
+
+        <!-- Start Row //// -->
+        <div class="row section">
+
+
+            <!-- The column for showing the image and the link-->
+
+            <div class="four columns">
+                <!-- image thumbnai; as a link to the exercise index page --><br>
+                <a href="p5_code/ex5_phase-1/index.html"> <img src="images/p3_images/p3-ex5-ph1.png" class="u-full-width " /> </a>
+            </div>
+
+            <!-- The column for artist statement and the link-->
+            <div class="eight columns">
+                <h5>Exercise 5 - Phase 1: Preview</h5>
+                <p>
+                    Phase 1 - Version 1 Image
+                    <br>
+                    <a href="images/p3_images/p3-ex5-v1.png"> <img src="images/p3_images/p3-ex5-v1.png" class="u-full-width " /> </a>
+                    <br>
+
+                    <a href="p5_code/ex5_phase-1/index.html">Run Exercise 5 Phase 1</a> <br>
+                    <a href="p5_code/ex5_phase-1/sketch.js">See code for Exercise 5 Phase 1</a>
+                </p>
+            </div>
+
+
+            <!--////  End of row section-->
+        </div>
+
+        <!-- Start Row //// -->
+        <div class="row section">
+
+
+            <!-- The column for showing the image and the link-->
+
+            <div class="four columns">
+                <br>
+                <a href="p5_code/ex5_phase-2/index.html"> <img src="images/p3_images/p3-ex5-ph2.png" class="u-full-width " /> </a>
+
+            </div>
+
+            <!-- The column for artist statement and the link-->
+            <div class="eight columns">
+                <h5>Excercise 5 - Phase 2: Final Version</h5>
+                <p>
+                    <a href="p5_code/ex5_phase-2/index.html">Run Exercise 5 Phase 2</a> <br>
+                    <a href="p5_code/ex5_phase-2/sketch.js">See code for Exercise 5 Phase 2</a><br><br>
+
+                    My group members were Alyssa Guardado and Jasmine Mirzamani. Our theme for Exercise 5 was Pokemon characters,
+                    and we made grid arrays of size 30x30. I created 8 custom functions in total to remap the grid arrays.
+                    Based on my 2 grid arrays, I have 7 distinct mapped images and each are mapped twice using
+                    different translations, rotations, and scale.
+                    I also have 2 more mapped images based on my group's grid arrays (one from Alyssa and one from Jasmine)
+                    and each are also mapped twice.
+                    In total, I have 18 mapped images in Exercise 5.
+                    <br><br>
+                    My numerical grid array represents the Pokemon character Eevee, which looks like a deer.
+                    For the numerical data, I created three mapping functions that transforms the data into an image of Eevee.
+                    The first transforms the numbers into a greyscale pixel grid, where larger values are lighter shades.
+                    The second function transforms it into a grid of colorful shapes and uses the mod function in an if statement
+                    to control the offset for each row . This makes the grid staggered a bit to the left and right.
+                    The last mapping function for the numerical data transforms it into a grid of bitmap images.
+                    <br><br>
+                    My text grid array represents the Pokemon character Charmander, which is an orange fire-type pokemon.
+                    The strings in this grid describe the part of the character, such as 'body' or 'head' and 'hp' for 'health points'.
+                    For this data of strings, I created four mapping functions to transform the data into an image of Charmander.
+                    The first function presents the strings in a grid of colorful text.
+                    The second function transforms the strings into a grid of bitmaps that represent Charamander, so
+                    I collected bitmaps of fire and caution signs. The bitmaps in this grid are also staggered
+                    using an offset based on the modulo of the row numbers.
+                    The thrid function transforms the strings in to a grid of several colorful shapes, such as circles, triangles, and squares.
+                    The last function maps the strings to grid of text where each text string is slightly rotated to the right, and it alternates
+                    the color of every other column using the modulo.
+                    <br><br>
+                    For my group's grid arrays, I used Jasmine's numerical grid array and remapped it using my function mapNumToBitMaps().
+                    That is the same function that maps my numerical grid array, but passed with a different image array.
+                    I also used Alyssa's numerical grid array and I remapped it to a grid of colorful pixels.
+                </p>
+
+            </div>
+
+
+            <!--////  End of row section-->
+        </div>
+
+
+        <div class="row section">
+
+            <!-- The column for showing the image and the link-->
+
+            <div class="four columns">
+                <br>
+                <a href="https://docs.google.com/presentation/d/13aGSp6xPQH7DRVjKXfC_bGtpsLtnxs5Fmxrk4IovaPQ/edit?usp=sharing">
+                    <img src="images/p3_images/p3-slide.png" class="u-full-width" /> </a>
+
+            </div>
+
+            <!-- The column for artist statement and the link-->
+            <div class="eight columns">
+                <h5>Clock Brainstorming List &amp; Sketches</h5>
+                <p>
+                    <a href="https://docs.google.com/presentation/d/13aGSp6xPQH7DRVjKXfC_bGtpsLtnxs5Fmxrk4IovaPQ/edit?usp=sharing">
+                        See Google Slide Deck</a><br><br>
+                    Sketch 1 <br>
+                    Each column represents an hour in a 24-hour clock.
+                    Each row represents a different activity, and multiple activities can be happening at once.
+                    The rectangles that represent the activity would increase per minute.
+                    <br>
+                    <a href="images/p3_images/p3-sketch1.jpg"> <img src="images/p3_images/p3-sketch1.jpg" class="u-full-width " /> </a>
+                    <br>
+                    <br>
+                    Sketch 2 <br>
+                    The images represent the activity and they would change according to the time I would normally do that activity.
+                    The number of smaller images represents the minute and the number of larger images represent the hour.
+                    This sketch best reflects where I ended up going design wise for project 3 because I used images to represent
+                    my activites in my completed project 3 clock.
+                    <br>
+                    <a href="images/p3_images/p3-sketch2.jpg"> <img src="images/p3_images/p3-sketch2.jpg" class="u-full-width " /> </a>
+                </p>
+
+            </div>
+
+            <!--////  End of row section-->
+        </div>
+
+        <div class="row section">
+
+            <!-- The column for showing the image and the link-->
+
+            <div class="four columns">
+                <br>
+                <a href="p5_code/project3_oc-final/index.html"> <img src="images/p3_images/p3-thumbnail.png" class="u-full-width" /> </a>
+
+            </div>
+
+            <!-- The column for artist statement and the link-->
+            <div class="eight columns">
+                <h5>Project 3 - Personalized Clock</h5>
+                <p>
+                    <a href="p5_code/project3_oc-final/index.html">Run Project 3</a> <br>
+                    <a href="p5_code/project3_oc-final/sketch.js">See code for Project 3</a><br><br>
+                    My approach to creating my personal clock was to use images that represent my daily activites according to the time I
+                    usually do those activities.
+                    My clock counts the time in a 24-hour format,
+                    and I created a horizontal staggered grid pattern for each second, minute, and hour.
+                    The seconds grid is at the top and is represented by the smallest size images.
+                    The minutes grid is in the middle and is represented by medium sized images.
+                    The hours grid is at the bottom and is represented by the largest size images.
+                    <br><br>
+                    For example, in the afternoon, I usually watch an episode of a show on Amazon Prime video.
+                    This is represented in my clock at 16:30 to 17:30, where the seconds image is of an Amazon FireStick TV remote control,
+                    the minutes image is a poster of the show "Mr Robot" that I've been watching, and the hours image is of
+                    the Amazon Prime video logo.
+                    In my clock, the hour images accumulate according to the activity corresponding to that previous hour, but the minutes and
+                    seconds images will always accumulate according to the current activity.
+                    For example, when the time changes from 17:30 to 17:31 and my activity changes from watching the TV show to feeding my dogs,
+                    all the seconds and minutes images that were previously displayed on the screen will become a dog bowls and dog treats,
+                    respectively.
+                    I created it this way so that as the hours go on in a day, the hours can be looked back upon to see how my activities progressed.
+                    <br><br>
+                    I also have alarms in my clock where text of a short description of the activity shows up in the upper right corner for the
+                    first 40 seconds when the activity begins. Using the millis() function, I have smaller text that rhythmically shows up below the seconds grid that describes what I also do during some of the activities.
+                    For example, I usually snack on crackers during my study/homework time and when playing video games, so text saying
+                    "Eat snack - crackers" periodically shows on the screen during those times.
+                    <br><br>
+                    To further represent the passage of time throughout the day, the background color changes according to the time of day or night.
+                    The background is dark blue at night, yellow at sunrise, progresses to brighter shades of blue up to the afternoon, then progresses to darker shades of blue in the evening. In addition, there is a sun and moon that rises and sets on the right side of the canvas, according to the hour of the day/night.
+                </p>
+
+            </div>
+
+            <!--////  End of row section-->
+        </div>
+
+        <div class="row section">
+
+            <div class="six columns">
+                img 1 <a href="images/p3_images/p3-img1.png"> <img src="images/p3_images/p3-img1.png" class="u-full-width" /> </a>
+                img 3 <a href="images/p3_images/p3-img2-1.png"> <img src="images/p3_images/p3-img2-1.png" class="u-full-width" /> </a>
+                img 5 <a href="images/p3_images/p3-img3.png"> <img src="images/p3_images/p3-img3.png" class="u-full-width" /> </a>
+                img 7 <a href="images/p3_images/p3-img5.png"> <img src="images/p3_images/p3-img5.png" class="u-full-width" /> </a>
+                img 9 <a href="images/p3_images/p3-img7.png"> <img src="images/p3_images/p3-img7.png" class="u-full-width" /> </a>
+                img 11 <a href="images/p3_images/p3-img9.png"> <img src="images/p3_images/p3-img9.png" class="u-full-width" /> </a>
+                img 13 <a href="images/p3_images/p3-img11.png"> <img src="images/p3_images/p3-img11.png" class="u-full-width" /> </a>
+                img 15 <a href="images/p3_images/p3-img13.png"> <img src="images/p3_images/p3-img13.png" class="u-full-width" /> </a>
+                <br>
+            </div>
+
+            <div class="six columns">
+                img 2 <a href="images/p3_images/p3-img2.png"> <img src="images/p3_images/p3-img2.png" class="u-full-width" /> </a>
+                img 4 <a href="images/p3_images/p3-img2-2.png"> <img src="images/p3_images/p3-img2-2.png" class="u-full-width" /> </a>
+                img 6 <a href="images/p3_images/p3-img4.png"> <img src="images/p3_images/p3-img4.png" class="u-full-width" /> </a>
+                img 8 <a href="images/p3_images/p3-img6.png"> <img src="images/p3_images/p3-img6.png" class="u-full-width" /> </a>
+                img 10 <a href="images/p3_images/p3-img8.png"> <img src="images/p3_images/p3-img8.png" class="u-full-width" /> </a>
+                img 12 <a href="images/p3_images/p3-img10.png"> <img src="images/p3_images/p3-img10.png" class="u-full-width" /> </a>
+                img 14 <a href="images/p3_images/p3-img12.png"> <img src="images/p3_images/p3-img12.png" class="u-full-width" /> </a>
+                img 16 <a href="images/p3_images/p3-img14.png"> <img src="images/p3_images/p3-img14.png" class="u-full-width" /> </a>
+                <br>
+            </div>
+
+
+        </div>
+
+
+        <!-- end of MAIN container /////////////////-->
+
+    </div>
+
+
+
+
+
+</body></html>

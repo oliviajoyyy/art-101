@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Art101 - Olivia Joy Cacdac</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT ––––––––––––––––––––––––––––––––––––––––------–––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS & JS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="css/overlaypopup.js"> </script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/icon-joy.png">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION AT the TOP is Here-->
+
+    <nav class="navbar">
+        <div class="container nav_pad">
+            <ul>
+                <li><a class="navbar-link" href="index.html">Home Page</a></li>
+                <li><a class="navbar-link" href="p1.html">Project 1</a></li>
+                <li><a class="navbar-link" href="p2.html">Project 2</a></li>
+                <li><a class="navbar-link" href="p3.html">Project 3</a></li>
+                <li><a class="navbar-link" href="p4.html">Project 4</a></li>
+                <li><a class="navbar-link" href="participation.html">Participation Log</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+
+        <div class="row section">
+            <header id="header" class="twelve columns">
+                <h3>Project 2 - Algomations</h3>
+
+                <div class="statement_text">
+                    <em>
+                        <!-- <marquee behavior="scroll" direction="left"> -->
+                        "Talent is a pursued interest. Anything that you're willing to practice, you can do." - Bob Ross
+                        <!-- </marquee> -->
+                    </em>
+                    <br>
+
+                </div>
+
+            </header>
+        </div>
+
+
+        <!-- NOTE!: For each row section make sure your column divs add up to 12. so 4+8, 6+6, 2+10, etc.-->
+
+        <!-- Start Row //// -->
+        <div class="row section">
+
+            <!-- The column for showing the image and the link-->
+
+            <div class="four columns">
+                <!-- image thumbnai; as a link to the exercise index page --><br>
+                <a href="p5_code/ex3_combo/index.html"> <img src="images/p2_images/p2-ex3-combo.png" class="u-full-width " /> </a>
+            </div>
+
+            <!-- The column for artist statement and the link-->
+            <div class="eight columns">
+                <h5>Exercise 3 - Combined Verison In-class</h5>
+                <p>
+                    <a href="p5_code/ex3_combo/index.html">Run Combined Code in-class Version</a> <br>
+                    <a href="p5_code/ex3_combo/sketch.js">See code for Combined Code in-class Version</a> <br><br>
+
+                    For this in-class sketch, I created a humaniod character and then created a second variation by
+                    combining my code with Jake R's code. My character is the blue moving one on the canvas.
+                    This character uses my functions for the head, body, arms, and legs.
+                    The combined character is the green non-moving one, which uses Jake's function for the arms.
+                </p>
+            </div>
+
+            <!--////  End of row section-->
+        </div>
+
+        <!-- Start Row //// -->
+        <div class="row section">
+
+            <!-- The column for showing the image and the link-->
+
+            <div class="four columns">
+                <!-- image thumbnai; as a link to the exercise index page --><br>
+                <a href="p5_code/ex3_creatures/index.html"> <img src="images/p2_images/p2-ex3.png" class="u-full-width " /> </a>
+            </div>
+
+            <!-- The column for artist statement and the link-->
+            <div class="eight columns">
+
+                <h5>Exercise 3 - Final Verison: Creatures</h5>
+                <p>
+                    <a href="p5_code/ex3_creatures/index.html">Run Exercise 3</a> <br>
+                    <a href="p5_code/ex3_creatures/sketch.js">See code for Exercise 3</a> <br><br>
+                    In final version of Exercise 3, I used child and parent functions to create an Alien creature with three variations. The first variation (ocAlien) is of a happy alien waving with one arm, the second (ocAlien2) is of an angry alien with its hands on its hips, and the third (ocAlien3) is of a happy alien waving with both arms up.
+                    <br><br>
+                    I used the push and pop functions to translate, rotate, and scale the different components of this creature. For example, I passed different rotation values to each arm function to place them upward, downward, or bent depending on the alien variation. The whole ocAlien function and its variations are parent functions that use several child functions, and some of those child functions are also parent functions themselves. For example, the face of the alien is a parent function that uses the child function ocEyes twice to draw both eyes, each with different rotations. The face component itself is also a child function that gets used in the parent function ocHead.
+                    <br><br>
+                    I included the bounce behavior to move the aliens around the canvas, changing direction as it reaches the edge of the canvas. I implemented the continous spinning behavior by passing a mystery value to ocAlien2 and ocAlien3 and adding it to the value passed to the rotation within the function. Lastly, I made a couple of the alien creatures continously increase and decrease in scale by passing a value that changes within a range to the alien function, which is then passed to the scale function.
+                    <br><br>
+                    I enjoyed writing the code to create the alien creatures because the functions made it organized and
+                    easy to redraw components several times. I also liked how the transform function set allowed for easy
+                    placement of the components when creating variations of the alien.
+                </p>
+            </div>
+
+            <!--////  End of row section-->
+        </div>
+
+        <!-- Start Row //// -->
+        <div class="row section">
+
+
+            <!-- The column for showing the image and the link-->
+
+            <div class="four columns">
+                <br>
+                <a href="p5_code/ex4_oop-creatures/index.html"> <img src="images/p2_images/p2-ex4.png" class="u-full-width " /> </a>
+
+            </div>
+
+            <!-- The column for artist statement and the link-->
+            <div class="eight columns">
+                <h5>Excercise 4 - OOP Creatures</h5>
+                <p>
+                    <a href="p5_code/ex4_oop-creatures/index.html">Run Exercise 4</a> <br>
+                    <a href="p5_code/ex4_oop-creatures/alien.js">See alien.js code for Exercise 4</a> <br>
+                    <a href="p5_code/ex4_oop-creatures/sketch.js">See sketch.js code for Exercise 4</a> <br><br>
+
+                    In this exercise, I created a class for my Alien creature.
+                    This class includes several parent and child functions that draw the alien, along with a some variations
+                    such as happy aliens, angry aliens, and different arm poses for each.
+                    My class also includes action functions that control the behavior of the alien objects.
+                    There are two different behavior methods that are interactive through the mouse control.
+                    The first changes the behavior by increasing and decreasing the scale of the aliens when the mouse is pressed.
+                    The other method changes the behavior by rotating the aliens as long as the mouse is moving.
+                    In addition, I included a function that controls the bounce behavior of the objects.
+                    <br><br>
+                    I created an array that creates and stores 15 alien creatures, initialized with a random color,
+                    rotation, scale, speed, and spinSpeed.
+                    As the array is looped through in draw(), each alien is displayed.
+                    Every other alien displayed will be a happy alien and the rest will be an angry alien.
+                    All aliens begin at the center of the canvas but spread out to different directions.
+                    The continous motion of the aliens are the bounce movements across the canvas, the head tilts,
+                    and the waving.
+                </p>
+
+            </div>
+
+
+            <!--////  End of row section-->
+        </div>
+
+
+        <div class="row section">
+
+
+            <!-- The column for showing the image and the link-->
+
+            <div class="four columns">
+                <a href=""> <img src="" class="u-full-width " /> </a>
+
+                <a href="video/p2_preview.mp4"> <img src="images/p2_images/p2-preview.png" class="u-full-width" /> </a>
+
+            </div>
+
+            <!-- The column for artist statement and the link-->
+            <div class="eight columns">
+                <h5>Project 2 Preview</h5>
+                <p>
+                    <a href="video/p2_preview.mp4">See Project 2 Preview Video</a>
+
+                </p>
+
+            </div>
+
+
+            <!--////  End of row section-->
+        </div>
+
+
+        <div class="row section">
+
+
+            <!-- The column for showing the image and the link-->
+
+            <div class="four columns">
+                <br>
+                <a href="p5_code/project2_oc-final/index.html"> <img src="images/p2_images/p2-img.png" class="u-full-width" /> </a>
+
+            </div>
+
+            <!-- The column for artist statement and the link-->
+            <div class="eight columns">
+                <h5>Project 2 - Algomation</h5>
+                <p>
+                    <a href="video/p2_final-low-bitrate.mp4">See Project 2 Animation Video</a> <br><br>
+                    
+                    <a href="p5_code/project2_oc-final/index.html">Run Project 2 Sketch</a> <br>
+                    <a href="p5_code/project2_oc-final/parametric.js">See parametric.js code for Project 2</a> <br>
+                    <a href="p5_code/project2_oc-final/sketch.js">See sketch.js code for Project 2</a><br><br>
+
+                    In this project, I created a custom class called ocParametric and it is
+                    based on the Parametric Equations Algorithm,
+                    <a href="https://p5js.org/examples/math-parametric-equations.html">referenced here</a>.
+                    I started this project by changing the color of the lines, as shown in img 1. I then
+                    changed the values of the equations that placed the x and y coordinates and increased the scale,
+                    as shown in img 2.
+                    In my custom class, I created 3 display methods that use variations of the original parametric
+                    algorithm's equations. I created these variations by changing the values in the equations, and
+                    this made the algorithmic drawing behave in different ways.
+                    <br><br>
+                    There are three main acts in my animation controlled by frameCount,
+                    and a different display method is used in each act.
+                    There are also several smaller acts within each main act that use the behavior methods I created
+                    in my custom class.
+                    For example, I created a method ocZoom that increases or decreases the scale
+                    of the object, which makes it look like we are zooming in/out on the object.
+                    I also created a static method ocCombine, which is used in the second main act.
+                    This method takes 2 arrays of objects and moves each object around the canvas based on another
+                    variation of the parametic equations that place the x and y coordinates.
+                    There is also a method I included in my class that moves the object around in a circle about the
+                    center of the canvas. For the code in this method, I referenced
+                    <a href="https://editor.p5js.org/kchung/sketches/SJkdHhWUQ">Move in a Circle by kchung</a> on p5js.
+                    Other behavior methods that I created for this class include wraparound movement, spinning the object,
+                    and increasing the speed that the lines of the object are drawn.
+                    <br><br>
+                    To create the amination video, I used frameRate(), and saveCanvas().
+                    I set the frame rate to 1 frame per second in order to fully render the images of my animation.
+                    This also allowed my computer to download each frame in the animation, using saveCanvas(),
+                    without skipping over any frames.
+                    To allow the video to play smoothly over the internet, I compressed the file as adaptive low bitrate and
+                    h.264. The video is in 4K and the file size is about 260 MB.
+                </p>
+            </div>
+
+
+            <!--////  End of row section-->
+        </div>
+
+
+        <div class="row section">
+
+
+            <div class="twelve columns">
+
+                <a href="video/p2_final-low-bitrate.mp4">See Project 2 Animation Video</a> or click the image below <br>
+                <a href="video/p2_final-low-bitrate.mp4"> <img src="images/p2_images/p2-vid-img.png" class="u-full-width" /> </a>
+
+            </div>
+
+        </div>
+
+        <div class="row section">
+
+            <div class="six columns">
+                Starting images:<br>img 1 <a href="images/p2_images/p2-s1.png"> <img src="images/p2_images/p2-s1.png" class="u-full-width" /> </a> <br>
+            </div>
+
+            <div class="six columns">
+                <br>img 2 <a href="images/p2_images/p2-s2.png"> <img src="images/p2_images/p2-s2.png" class="u-full-width" /> </a> <br>
+            </div>
+        </div>
+
+
+
+        <!-- end of MAIN container /////////////////-->
+
+    </div>
+
+
+
+
+
+</body></html>
