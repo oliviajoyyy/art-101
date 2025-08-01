@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="../lib/p5.min.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+	<!--<script language="javascript" src="../lib/p5.dom.min.js"></script>-->
+  <!--<script language="javascript" src="../lib/p5.sound.min.js"></script>-->
+  <script language="javascript" type="text/javascript" src="alien.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style>
+   body {padding: 50; margin: 50;
+  	background-color: #222;
+    font-family: Arial, Helvetica, sans-serif
+  }
+   h1 { color:#b3edff;
+	    font-size: 20;
+   }
+
+   p { color:rgb(212, 212, 212);}
+
+  </style>
+
+</head>
+
+<body>
+<h1>Exercise 4 - Alien Creatures</h1>
+
+<p> (<strong>Artist Sketch</strong>)
+  In this exercise, I created a class for my Alien creature. 
+  This class includes several parent and child functions that draw the alien, along with a some variations 
+  such as happy aliens, angry aliens, and different arm poses for each. 
+  My class also includes action functions that control the behavior of the alien objects.
+  There are two different behavior methods that are interactive through the mouse control. 
+  The first changes the behavior by increasing and decreasing the scale of the aliens when the mouse is pressed.
+  The other method changes the behavior by rotating the aliens as long as the mouse is moving.
+  In addition, I included a function that controls the bounce behavior of the objects.
+
+  <br><br>
+
+  I created an array that creates and stores 15 alien creatures, initialized with a random color,
+  rotation, scale, speed, and spinSpeed. 
+  As the array is looped through in draw(), each alien is displayed.
+  Every other alien displayed will be a happy alien and the rest will be an angry alien.
+  All aliens begin at the center of the canvas but spread out to different directions.
+  The continous motion of the aliens are the bounce movements across the canvas, the head tilts, 
+  and the waving. 
+
+  <br><br>
+
+  Control these behaviors by mouse actions:
+  <br>
+  - Spin the aliens: move the mouse around
+  <br>
+  - Increase/decrease alien size: press and hold the mouse
+
+</p>
+ <br>
+</body>
+</html>

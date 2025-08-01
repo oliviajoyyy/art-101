@@ -1,0 +1,92 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="../lib/p5.min.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+	<!--<script language="javascript" src="../lib/p5.dom.min.js"></script>-->
+  <!--<script language="javascript" src="../lib/p5.sound.min.js"></script>-->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style>
+    body {padding: 50; margin: 50;
+  	background-color: #222;
+    font-family: Arial, Helvetica, sans-serif
+    
+  }
+   h1 { color:#b3edff;
+	    font-size: 20;
+   }
+
+   p { color:rgb(212, 212, 212);}
+
+  </style>
+
+</head>
+
+<body>
+<h1>Project 1</h1>
+
+<p> (<strong>Artist Sketch</strong>) In this project, I created 5 drawing tools: ocPetals, ocSpikes, ocSpots, ocStitch, and ocDiamonds. 
+ I approached this assignment with the idea of wanting randomness in my algorithmic brushes while still giving control to the artist.
+ I incorporated randomness into my brushes by creating them so that shapes are drawn at varying locations surrounding the mouse position
+ and having variation in the shades of fill color.
+ <br><br>
+ What I found successful about this project is being able to give the user more ways to use the 5 brushes through change of color and size.
+ I did this by allowing the color of each brush to be switched between greyscale and a red/maroon shade with a toggle key. 
+ I also allow the user to increase and decrease the size of the ocSpots, ocDiamonds, and eraser tools. 
+ What I like most about my color scheme is how the gold accent contrasts with the red and gives the drawings a pop of color.
+ What I feel could be improved is adding another toggle key to switch to a different color, such as green or blue, 
+ so that the user can have more color options. 
+ <br><br>
+ I have made a detailed and intricate art style with my brushes and my 12 drawings because of the thin stroke borders for the shapes.
+ The subject matter that my drawing tool seems to be good for is flowers, especially because of the tool that creates lotus-like petals.
+ The ocSpikes and ocSpots tools also seem to be good for drawing flower-like subjects because of the petal-like shapes that can be created with them.
+ The ocDiamonds tool seems to be good for creating a geometric background for the subject, especially when the brush is increased to a large size. 
+ <br><br>
+ Details about the tools:
+ <br><br>
+ ocPetals draws the petals of a lotus-like flower. 
+ This drawing tool uses the vertex and bezier vertex drawing commands to anchor the shape at the bottom of the canvas 
+ and have the tip of the petal follow the mouse position. 
+ <br><br>
+ ocSpikes draws spikes that change its orientation depending on the location it is drawn on the canvas. 
+ The tip of the spike is orientented downward when drawn at the middle of the canvas and is oriented towards the middle of the canvas 
+ when drawn at the edge of the canvas.
+ This tool also uses the vertex and bezier vertex drawing commands but it connects each spike to the last
+ based on the previous mouse position. 
+ <br><br>
+ ocSpots draws slightly transparent ellipses of varying width and height surrounding the mouse position within 50 pixels.
+ The random number generated within 50 pixels is also used to alter the width and height of the ellipses.
+ Its base size can be increased or decreased using the '+' or '-' keys. 
+ <br><br>
+ ocStitch draws a line with stitch-like criss-crosses along it. 
+ This drawing tool uses the line function three times to draw a base line following the mouse position, the left-diagonal 
+ stitches, and the right-diagonal stitches. The stitches slightly vary in length based on a random number passed as 
+ a function argument.
+ <br><br>
+ ocDiamonds draws slightly transparent diamond shapes at random mouseY positions at the mouseX position. 
+ This drawing tool uses the quad() drawing function in a loop that controls how quickly the diamonds get repeatedly drawn. 
+ It can also be increased or decreased in size using the '+' or '-' keys.
+</p>
+
+<p>Drawing Tools<br>
+  '1' - ocPetals<br>
+  '2' - ocSpikes<br>
+  '3' - ocSpots<br>
+  '4' - ocStitch<br>
+  '5' - ocDiamonds<br>
+  '0' - Eraser<br>
+  '+' - increase size of tool ocSpots, ocDiamonds, or the eraser<br>
+  '-' - decrease size of tool ocSpots, ocDiamonds, or the eraser<br>
+  'g' - toggle between greyscale and red/gold color scheme<br>
+  'x' or 'X' - Reset canvas to background color<br>
+  'p' or 'P' - Save a screenshot of the canvas<br>
+  <br>How to use:<br>
+  First press the key to select a drawing tool, then press the mouse to draw on the canvas. <br>
+  To change the size, first click either '+' or '-', then reselect the desired drawing tool 
+  (only ocSpots, ocDiamonds, and the eraser can change size). <br>
+  To toggle between greyscale and color, click 'g' then reselect the desired drawing tool. 
+</p>
+ <br>
+</body>
+</html>

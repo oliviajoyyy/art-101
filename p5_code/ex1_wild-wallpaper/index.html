@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="../lib/p5.min.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+	<!--<script language="javascript" src="../lib/p5.dom.min.js"></script>-->
+  <!--<script language="javascript" src="../lib/p5.sound.min.js"></script>-->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style>
+   body {padding: 50; margin: 50;
+  	background-color: #222;
+    font-family: Arial, Helvetica, sans-serif
+  }
+   h1 { color:#b3edff;
+	    font-size: 20;
+   }
+
+   p { color:rgb(212, 212, 212);}
+
+  </style>
+
+</head>
+
+<body>
+<h1>Exercise 1</h1>
+
+<p> (<strong>Artist Sketch</strong>) In this exercise, I used nested if statements to determine when and where
+  different shapes are drawn on the canavas by the value of the mouse X and Y position. 
+  I also used nested for loops to create the grid of ellipses in flashing colors, and to create the line of ellipses that follow
+  the mouse Y position.
+  I used the height and width properties in the random function to generate numbers up to the height or width, and I used them in 
+  the conditions of some for loops to control how far the shapes should be drawn.
+  I also used the random function to generate rgb values to input into the color functions fill() and stroke(). 
+  I used an overloaded version of the fill() and stroke() functions by passing an alpha value. 
+  In addition to using the ellipse(), rect(), and triangle() drawing commands, I also learned how to use quad() and arc().
+  I used quad() to draw diamond shapes and arc() to draw a shape that looks like the upper half of an oval.
+  <br><br>
+  Learning how to use quad() was a bit of a challenge because I had to figure out where the next point of the 
+  shape should be relative to its other points for the diamond shape I was trying to make. 
+  I like how this exercise turned out because there are many shapes being drawn on the canvas at once with many 
+  flashing colors, yet there is still some control given to the user for what gets drawn based on the mouse position.
+  <br><br>
+  How to use<br>
+  Move mouse on the left side of the canvas to: <br> 
+  - draw a row of purple ellipses, following the mouseY position<br>
+  - draw varying sized oval ellipses in the middle of the canvas height, following the mouseX position<br>
+  - change the color of the wicker grid pattern by moving the mouse up and down<br>
+  <br>
+  Move mouse on upper right side of the canvas to:<br>
+  - draw a flashing blue/green ellipse grid on the right side<br>
+  - draw green/yellow diamonds on the lower right<br>
+  - draw diamonds in a line following the mouseX position<br>
+  - draw orange triangles moving towards the mouse<br>
+  <br>
+  Move mouse on lower right side of the canvas to:<br>
+  - draw half ellipses at random positions on the lower part of the canvas
+</p>
+ <br>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="../lib/p5.min.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+	<!--<script language="javascript" src="../lib/p5.dom.min.js"></script>-->
+  <!--<script language="javascript" src="../lib/p5.sound.min.js"></script>-->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style>
+   body {padding: 50; margin: 50;
+  	background-color: #222;
+    font-family: Arial, Helvetica, sans-serif
+  }
+   h1 { color:#b3edff;
+	    font-size: 20;
+   }
+
+   p { color:rgb(212, 212, 212);}
+
+  </style>
+
+</head>
+
+<body>
+<h1>Exercise 2</h1>
+
+<p> (<strong>Artist Sketch</strong>) In this exercise, I used a grid-based positioning system to move an image based
+  on A W S D key presses, captured by key event functions and key properties. 
+  I used a switch statement to make a selector between 3 different images (a turtle, dolphin, or a fish) using key presses. 
+  I also added a light purple tint on the images.
+  I incorportated text with a custom font and allowed it to show up on the canvas at the mouse position using the mousePressed() function. 
+  I used global variables to keep track of counting states for the background colors and I reset them using if statements. 
+  I used toggle logic with key presses to have global variables alternate between true/false or toggle betweeen certain color values.
+  For example, the border can be toggled between sqaures and diamonds, 
+  and the red value in the background color can be toggled between 20 and 255.
+  Lastly, I used the && logical operator so that the large moving text only shows when both the mouse and any key are pressed.
+  <br><br>
+  I found the grid-based positioning system easy to work with in the code. I was able use control statements to keep the image
+  within the canvas by checking if the next move would make the image go past the edge of the canvas. 
+  In the case that it would move off the canvas, I did not allow the key presses to affect the position of the image.
+  <br><br>
+  How to use: <br>
+  '1' - turtle image<br>
+  '2' - dolphin image<br>
+  '3' - fish image<br>
+  'a' - move left<br>
+  'w' - move up<br>
+  's' - move down<br>
+  'd' - move right<br>
+  'e' - move upper-right diagonal<br>
+  'q' - move upper-left diagonal<br>
+  'r' or 'R' - toggle background red value bwteen 20 and 255 & stop counting blue value<br>
+  RETURN key - toggle border between squares and diamonds<br>
+  mouse click - show text at mouse position of what the currently selected image is<br>
+  hold mouse press and any any key at same time - show moving 'HELLO' text
+</p>
+ <br>
+</body>
+</html>

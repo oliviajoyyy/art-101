@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="../lib/p5.min.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+	<!--<script language="javascript" src="../lib/p5.dom.min.js"></script>-->
+  <!--<script language="javascript" src="../lib/p5.sound.min.js"></script>-->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style>
+   body {padding: 50; margin: 50;
+  	background-color: #222;
+    font-family: Arial, Helvetica, sans-serif
+  }
+   h1 { color:#b3edff;
+	    font-size: 20;
+   }
+
+   p { color:rgb(212, 212, 212);}
+
+  </style>
+
+</head>
+
+<body>
+<h1>Exercise 3 - Alien Creatures</h1>
+
+<p> (<strong>Artist Sketch</strong>) 
+  In this exercise, I practiced using child and parent functions to create an Alien creature
+  with three variations. The first variation (ocAlien) is of a happy alien waving with one arm, 
+  the second (ocAlien2) is of an angry alien with its hands on its hips, and the third (ocAlien3) 
+  is of a happy alien waving with both arms up. 
+  <br><br>
+  I used the push and pop functions to translate, rotate, and scale the different components
+  of this creature. For example, I passed different rotation values to each arm function to place them 
+  upward, downward, or bent depending on the alien variation.
+  The whole ocAlien function and its variations are parent functions that use several child functions, 
+  and some of those child functions are also parent functions themselves.
+  For example, the face of the alien is a parent function that uses 
+  the child function ocEyes twice to draw both eyes, each with different rotations. The face 
+  component itself is also a child function that gets used in the parent function ocHead. 
+  <br><br>
+  I included the bounce behavior to move the aliens around the canvas, changing direction 
+  as it reaches the edge of the canvas.
+  I implemented the continous spinning behavior by passing a mystery value to ocAlien2 and ocAlien3
+  and adding it to the value passed to the rotation within the function.
+  Lastly, I made a couple of the alien creatures continously increase and decrease in scale by 
+  passing a value that changes within a range to the alien function, which is then passed to the
+  scale function.
+</p>
+ <br>
+</body>
+</html>
